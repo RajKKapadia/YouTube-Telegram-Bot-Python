@@ -4,6 +4,7 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 
+# Use your API key
 TELEGRAM_API_KEY = os.getenv('TELEGRAM_API_KEY')
 
 def sendMessage(sender_id: int, message: str) -> None:
